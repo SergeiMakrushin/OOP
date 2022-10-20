@@ -2,35 +2,18 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
 
-        Human maxim = new Human();
-        maxim.name = "Максим";
-        maxim.town = "Минск";
-        maxim.yearOfBirth= 1987;
-        maxim.job = "бренд-менеджер";
+        Human maxim = new Human("Максим", "Минск", 1987, "бренд-менеджер");
 
+        Human anna = new Human("Аня", "Москва", -5, "методист образовательных програм");
 
-        Human anna=new Human();
-        anna.name="Аня";
-        anna.town="Москва";
-        anna.yearOfBirth=1993;
-        anna.job = "методист образовательных програм";
+        Human kate = new Human("Катя", "Калининград", 1994, "продакт-менеджер");
 
-        Human kate = new Human();
-        kate.name = "Катя";
-        kate.town = "Калининград";
-        kate.yearOfBirth = 1994;
-        kate.job = "продакт-менеджер";
+        Human artem = new Human("Артём", null, 1995, "директор по развитию бизнеса");
 
-        Human artem = new Human();
-        artem.name = "Артём";
-        artem.town = "Москва";
-        artem.yearOfBirth = 1995;
-        artem.job = "директор по развитию бизнеса";
-
-        maxim.Print();
-        anna.Print();
-        kate.Print();
-        artem.Print();
+        System.out.println(maxim);
+        System.out.println(anna);
+        System.out.println(kate);
+        System.out.println(artem);
 
 
     }
